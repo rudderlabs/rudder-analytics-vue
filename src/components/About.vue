@@ -2,7 +2,7 @@
   <div>
     <h1>About</h1>
     <p class="about-content">
-      Segment collects analytics data and sends it to 250+ apps with the flip of a switch (e.g. Google Analytics, Mixpanel, Optimizely, Facebook Ads, Slack, Sentry). You only need one snippet and you can turn integrations on and off whenever you want with no additional code.
+      Rudder is a platform for collecting, storing and routing customer event data to dozens of tools. Rudder is open-source, can run in your cloud environment (AWS, GCP, Azure or even your data-centre) and provides a powerful transformation framework to process your event data on the fly.
     </p>
   </div>
 </template>
@@ -11,7 +11,7 @@
 export default {
   name: 'About',
   mounted () {
-    window.analytics.page('About')
+    window.rudderanalytics.page('About')
   }
 }
 </script>

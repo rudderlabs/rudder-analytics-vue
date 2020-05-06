@@ -9,7 +9,7 @@
 export default {
   name: 'Home',
   mounted () {
-    window.analytics.page('Home')
+    window.rudderanalytics.page('Home')
   }
 }
 </script>

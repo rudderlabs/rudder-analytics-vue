@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     trackClickEvent () {
-      window.analytics.track('Learn Vue Link Clicked')
+      window.rudderanalytics.track('Learn Vue Link Clicked')
     }
   }
 }

@@ -1,16 +1,16 @@
 {
-  "name": "analytics-vue",
+  "name": "rudder-analytics-vue",
   "description": "The hassle-free way to integrate analytics into your Vue application.",
   "version": "1.0.0",
   "contributors": [
     "William Grosset (https://williamgrosset.com)"
   ],
   "keywords": [
-    "segment",
+    "rudder",
     "analytics",
     "vue"
   ],
-  "repository": "segmentio/analytics-vue",
+  "repository": "rudderlabs/rudder-analytics-vue",
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
