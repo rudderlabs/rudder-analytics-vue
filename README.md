@@ -1,8 +1,12 @@
 # What is RudderStack?
-Rudder is an enterprise-ready, open-source alternative to Segment, for collecting and routing customer event data. More information on Rudder can be found [here](https://github.com/rudderlabs/rudder-server).
 
-# Installing on Your App
-Follow the steps below to install our JS SDK on your vue app -
+[RudderStack](https://rudderstack.com/) is a **customer data pipeline** tool for collecting, routing and processing data from your websites, apps, cloud tools, and data warehouse.
+
+More information on RudderStack can be found [here](https://github.com/rudderlabs/rudder-server).
+
+# Installing RudderStack's JavaScript SDK on your Vue.js app
+
+Follow the steps below to install our JavaScript SDK on your vue app -
 
 ## Step 1: Install RudderStack using the code snippet
 
@@ -51,17 +55,18 @@ The non-minified version of the code is shown below:
 <script  src="https://cdn.rudderlabs.com/v1/rudder-analytics.min.js"></script>
 ```
 
-**NOTE**: Whichever version of the code you use, you need to replace `YOUR_WRITE_KEY` with the write key in the RudderStack Control Plane and `DATA_PLANE_URI` with the URI of the RudderStack Server/ Data Plane.
+**NOTE**: Whichever version of the code you use, you need to replace `YOUR_WRITE_KEY` with the write key in the RudderStack Control Plane and `DATA_PLANE_URL` with the URL of the RudderStack backend data plane.
 
-You can also execute the min file in async/defer way, like:
+You can also execute the min file in async/defer way, as shown below:
 ```
 <script async src="https://cdn.rudderlabs.com/rudder-analytics.min.js"></script>
 ```
-**NOTE**: We are moving our sdk to a diiferent path from the earlier https://cdn.rudderlabs.com/rudder-analytics.min.js to
+**NOTE**: We are moving our SDK to a diiferent path from the earlier https://cdn.rudderlabs.com/rudder-analytics.min.js to
 https://cdn.rudderlabs.com/v1/rudder-analytics.min.js. The earlier path may not be maintained in coming releases.
 
 
-## Step 2: Identify your users using the `identify()` method:
+## Step 2: Identify your users using the `identify()` method
+
 The `identify()` method allows you to link users and their actions to a specific userid.
 
 A sample example of how the `identify()` method works is as shown:
@@ -83,7 +88,7 @@ rudderanalytics.identify(
 ```
 In the above example, information such as the user ID, email along with contextual information such as IP address, anonymousId, etc. will be captured.
 
-**NOTE**: There is no need to call `identify()` for anonymous visitors to your website. Such visitors are automatically assigned an anonymousId.
+**NOTE**: There is no need to call `identify()` for anonymous visitors to your website. Such visitors are automatically assigned an `anonymousId`.
 
 ## Step 3: Track your users’ actions using the `track()` method
 The `track()` method allows you to track any actions that your users might perform.
@@ -145,6 +150,7 @@ rudderanalytics.ready(
 );
 ```
 # Adding callbacks to standard methods
+
 One can also define callbacks to common methods of  ```rudderanalytics``` object.
 ***Note***: For now, the functionality is supported for ```syncPixel``` method which is called in Rudder SDK when making sync calls in integrations for relevant destinations.
 
@@ -169,9 +175,10 @@ We will be adding similar callbacks for apis such as ```track, page, identify```
 
 # Running your Vue Application
 
-Once you have succesfully installed our JS SDK, you are all set to send your tracking data to Rudder.All you need to do now is to install dependencies for your app and run it.
+Once you have succesfully installed our JS SDK, you are all set to send your tracking data to RudderStack.All you need to do now is to install dependencies for your app and run it.
 
 ## Installing Dependencies
+
 Run the following command depending on whether you use `npm` or `yarn` to manage your packages -
 ```
 npm install
@@ -182,6 +189,8 @@ yarn install
 ```
 ## Running your Application
 
-To run your application, you need to run `npm start` or `yarn start` from your project's `root` directory.
+To run your application, you need to run `npm start` or `yarn start` from your project's `root` directory. Your events should now appear in the live events section of your source.
 
-Your events would now appear in the live events section of your source
+## Contact Us
+
+If you come across any issues while configuring or using the JavaScript SDK on your Vue app, please feel free to start a conversation on our [Slack](https://resources.rudderstack.com/join-rudderstack-slack) channel. We will be happy to help you.
